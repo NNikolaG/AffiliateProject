@@ -1,0 +1,24 @@
+<main>
+    <div class="container">
+        <div class="search-mobile">
+            <div class="row">
+                <div class="col-10 search d-flex justify-content-around">
+                    <input type="text" placeholder="Search for products">
+                    <div class="search-icon round d-flex justify-content-center align-items-center">
+                        <fa-icon [icon]="faSearch"></fa-icon>
+                    </div>
+                </div>
+                <div class="col-2 filters">
+                    <div class="round d-flex justify-content-center align-items-center">
+                        <fa-icon [icon]="faSliders"></fa-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p-carousel [value]="images" [numVisible]="3" [numScroll]="1">
+        <ng-template let-car pTemplate="item">
+            Content to display
+        </ng-template>
+    </p-carousel>
+</main>

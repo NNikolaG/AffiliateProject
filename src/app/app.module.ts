@@ -11,6 +11,8 @@ import { environment } from 'src/environments/environment';
 //Icons
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+//Modules
+import { HomeModule } from './home/home.module';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -21,13 +23,14 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     FontAwesomeModule,
+    HomeModule,
     NgbModule,
   ],
   providers: [],
