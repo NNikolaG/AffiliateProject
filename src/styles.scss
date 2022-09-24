@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: black;
+    }
+}
+
+.ss {
+    height: 150vh;
+}
+
+@keyframes animateShadow {
+    from {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    to {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
+
+@keyframes animateShadowOut {
+    from {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    to {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+}

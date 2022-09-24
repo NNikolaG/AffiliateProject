@@ -1,0 +1,120 @@
+.navigation-top {
+    border-bottom: 1px solid #c1c1c1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    .round {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #FF385C;
+        color: white;
+    }
+
+    input {
+        height: 40px;
+        width: 90%;
+        border: none;
+        border-radius: 25px;
+        padding: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        animation-name: animateShadowOut;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+
+        &:hover {
+            animation-name: animateShadow;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .search-icon {
+        margin-top: 5px;
+        position: relative;
+        left: -40px;
+
+        fa-icon {
+            color: white;
+        }
+    }
+
+    .log-in {
+        fa-icon {
+            color: #FF385C;
+            font-size: 1.4rem;
+        }
+
+        .round {
+            background-color: #222222;
+            fa-icon {
+                color: white;
+                font-size: 1rem;
+            }
+        }
+
+        .d-inline-block {
+            .dropdown-toggle::after {
+                content: none;
+            }
+
+            .menu {
+                width: 100px;
+                height: 40px;
+                border: none;
+                border-radius: 25px;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                background-color: rgba(0, 0, 0, 0);
+
+                animation-name: animateShadowOut;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+
+                &:hover {
+                    animation-name: animateShadow;
+                    animation-duration: 0.5s;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+
+
+    }
+}
+
+.navigation-bot {
+    display: none;
+    border-top: 1px solid #c1c1c1;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation-bot {
+        display: block;
+    }
+
+    .navigation-top {
+        .container {
+
+            .log-in,
+            .search {
+                display: none !important;
+            }
+
+            .logo {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

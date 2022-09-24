@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="col-12 navigation-top pt-3">
+        <div class="container d-flex">
+            <div class="col-md-4 col-12 logo d-flex ">
+                <h1>OFFICE</h1>
+            </div>
+            <div class="col-4 search d-flex justify-content-center">
+                <input type="text" placeholder="Search for products">
+                <div class="search-icon round d-flex justify-content-center align-items-center">
+                    <fa-icon [icon]="faSearch"></fa-icon>
+                </div>
+            </div>
+            <div class="col-4 log-in d-flex justify-content-end">
+                <div class="row">
+                    <div ngbDropdown class="d-inline-block">
+                        <button type="button" class="menu d-flex justify-content-around align-items-center"
+                            id="dropdownBasic1" ngbDropdownToggle>
+                            <fa-icon [icon]="faMenu"></fa-icon>
+                            <div class="round d-flex justify-content-center align-items-center">
+                                <fa-icon [icon]="faUser"></fa-icon>
+                            </div>
+                        </button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <button ngbDropdownItem>Action - 1</button>
+                            <button ngbDropdownItem>Another Action</button>
+                            <button ngbDropdownItem>Something else is here</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12 navigation-bot pt-2 pb-3">
+        <div class="container d-flex justify-content-around">
+            <div class="col-4 logo d-flex justify-content-around">
+                <input type="text">
+            </div>
+            <div class="col-4 logo d-flex justify-content-around">
+                <div ngbDropdown class="d-inline-block">
+                    <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle
+                        dropdown</button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                        <button ngbDropdownItem>Action - 1</button>
+                        <button ngbDropdownItem>Another Action</button>
+                        <button ngbDropdownItem>Something else is here</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
