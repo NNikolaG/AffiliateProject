@@ -113,5 +113,7 @@
       }
     }
   },
-  "defaultProject": "AffiliateProject"
+  "cli": {
+    "analytics": false
+  }
 }

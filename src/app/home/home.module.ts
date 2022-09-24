@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
-import {CarouselModule} from 'primeng/carousel';
+import { AccordionModule } from 'primeng/accordion';     //accordion and accordion tab
+import { CarouselModule } from 'primeng/carousel';
 
 import { HomeComponent } from './components/home/home.component';
 
@@ -20,6 +20,9 @@ import { HomeComponent } from './components/home/home.component';
     NgbModule,
     AccordionModule,
     CarouselModule
-  ]
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class HomeModule { }

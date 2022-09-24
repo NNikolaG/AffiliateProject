@@ -16,9 +16,15 @@
             </div>
         </div>
     </div>
-    <p-carousel [value]="images" [numVisible]="3" [numScroll]="1">
-        <ng-template let-car pTemplate="item">
-            Content to display
-        </ng-template>
-    </p-carousel>
+    <div class="category-carousel">
+        <p-carousel [value]="categories" styleClass="custom-carousel" [numVisible]="6" [numScroll]="1" [circular]="true"
+            [autoplayInterval]="0" [responsiveOptions]="responsiveOptions">
+            <ng-template let-cat pTemplate="item">
+                <div class="cat-item">
+                    <fa-icon [icon]="cat.icon"></fa-icon>
+                    <p>{{cat.title}}</p>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
 </main>

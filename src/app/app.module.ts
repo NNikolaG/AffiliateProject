@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserModule } from '@angular/platform-browser';
 
 //Firebase
 import { AngularFireModule } from "@angular/fire/compat";
@@ -32,6 +32,9 @@ import { NavigationComponent } from './components/navigation/navigation.componen
     FontAwesomeModule,
     HomeModule,
     NgbModule,
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ],
   providers: [],
   bootstrap: [AppComponent]

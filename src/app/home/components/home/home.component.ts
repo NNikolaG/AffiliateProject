@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faSearch, faSliders } from '@fortawesome/free-solid-svg-icons';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { faComputerMouse, faDesktop, faHeadset, faKeyboard, faPrint, faSearch, faSliders } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -9,21 +8,33 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HomeComponent implements OnInit {
 
+  public categories!: any;
+  public responsiveOptions!: any;
   public faSearch = faSearch;
   public faSliders = faSliders
 
-  public image!: string;
-
-  constructor(config: NgbCarouselConfig) {
-    config.interval = 10000;
-    config.wrap = false;
-    config.keyboard = false;
-    config.pauseOnHover = false;
+  constructor() {
+    this.responsiveOptions = [{
+      breakpoint: '768px',
+      numVisible: 4,
+      numScroll: 1
+    },
+    {
+      breakpoint: '576px',
+      numVisible: 3,
+      numScroll: 1
+    }
+    ];
   }
 
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
-
   ngOnInit(): void {
+    this.categories = [
+      { icon: faKeyboard, title: 'Keyboards' },
+      { icon: faComputerMouse, title: 'Mouses' },
+      { icon: faDesktop, title: 'Desktop' },
+      { icon: faHeadset, title: 'Headsets' },
+      { icon: faPrint, title: 'Printers' },
+    ];
   }
 
 }
