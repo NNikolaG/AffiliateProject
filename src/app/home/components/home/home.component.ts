@@ -34,6 +34,12 @@ export class HomeComponent implements OnInit {
       { icon: faDesktop, title: 'Desktop' },
       { icon: faHeadset, title: 'Headsets' },
       { icon: faPrint, title: 'Printers' },
+      { icon: faPrint, title: 'Printers' },
+      { icon: faPrint, title: 'Printers' },
+      { icon: faPrint, title: 'Printers' },
+      { icon: faPrint, title: 'Printers' },
+      { icon: faPrint, title: 'Printers' },
+      { icon: faPrint, title: 'Printers' },
     ];
   }
 

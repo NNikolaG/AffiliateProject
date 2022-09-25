@@ -1,8 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+@import 'bootstrap/scss/bootstrap';
 
+fa-icon {
+    color: #222222;
+}
 
 ul {
     list-style-type: none;
@@ -37,5 +40,45 @@ a {
 
     to {
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+}
+
+@keyframes animateCategory {
+    from {
+        color: rgba(99, 99, 99, 0.7)
+    }
+
+    to {
+        color: black;
+    }
+}
+
+@keyframes animateCategoryOut {
+    from {
+        color: black;
+    }
+
+    to {
+        color: rgba(99, 99, 99, 0.7)
+    }
+}
+
+@keyframes animateLine {
+    from {
+        color: rgba(99, 99, 99, 1)
+    }
+
+    to {
+        color: black;
+    }
+}
+
+@keyframes animateLineOut {
+    from {
+        color: black;
+    }
+
+    to {
+        color: rgba(99, 99, 99, 1)
     }
 }

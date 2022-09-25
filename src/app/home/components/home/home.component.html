@@ -16,15 +16,17 @@
             </div>
         </div>
     </div>
-    <div class="category-carousel">
-        <p-carousel [value]="categories" styleClass="custom-carousel" [numVisible]="6" [numScroll]="1" [circular]="true"
-            [autoplayInterval]="0" [responsiveOptions]="responsiveOptions">
-            <ng-template let-cat pTemplate="item">
-                <div class="cat-item">
-                    <fa-icon [icon]="cat.icon"></fa-icon>
-                    <p>{{cat.title}}</p>
-                </div>
-            </ng-template>
-        </p-carousel>
+    <div class="d-flex justify-content-center">
+        <div class="category-carousel">
+            <p-carousel [value]="categories" styleClass="custom-carousel" [numVisible]="6" [numScroll]="1"
+                [circular]="true" [autoplayInterval]="0" [responsiveOptions]="responsiveOptions">
+                <ng-template let-cat pTemplate="item">
+                    <div class="cat-item">
+                        <fa-icon [icon]="cat.icon"></fa-icon>
+                        <p>{{cat.title}}</p>
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
     </div>
 </main>
