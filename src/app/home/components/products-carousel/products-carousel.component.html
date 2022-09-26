@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-center">
+    <div class="product-carousel">
+        <h5>Popular</h5>
+        <p-carousel [value]="products" [numVisible]="1" [numScroll]="1" [autoplayInterval]="autoplayInterval"
+            [circular]="true">
+            <ng-template let-product pTemplate="item">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="../../../../assets/images/{{product.image}}" alt="{{product.image}}">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-title d-flex justify-content-center">
+                            <span class="title">{{product.name}}</span>
+                        </div>
+                        <div class="check-more d-flex justify-content-center">
+                            <button>
+                                Check it out
+                                <lord-icon src="https://cdn.lordicon.com/crrnydsb.json" trigger="loop" state="morph-check-in"
+                                    colors="primary:#ffffff" style="width:20px;height:20px">
+                                </lord-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
+</div>

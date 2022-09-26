@@ -50,9 +50,21 @@ input {
     border-radius: 50%;
     background-color: #FF385C;
     color: white;
+    border: none;
+
 }
 
-.filters {
+.btn-none {
+    border: none;
+    background-color: white;
+
+    &:hover {
+        border: none;
+        background-color: white;
+    }
+}
+
+.filter {
     margin-top: 5px;
     position: relative;
     left: -20px;
@@ -60,69 +72,26 @@ input {
     fa-icon {
         color: white;
     }
-}
 
-.category-carousel {
-    margin-top: 20px;
-    width: 80%;
+    .filters-content {
+        width: 100%;
+        height: auto;
 
-    .cat-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        animation-name: animateCategoryOut;
-        animation-duration: 0.3s;
-        animation-fill-mode: forwards;
-
-        cursor: pointer;
-
-        fa-icon {
-            animation-name: animateCategoryOut;
-            animation-duration: 0.3s;
-            animation-fill-mode: forwards;
-        }
-
-        p {
-            position: relative;
-
-            &::after {
-                display: block;
-                position: absolute;
-                content: "";
-                height: 2px;
-                width: 100%;
-                background-color: #222222;
-                margin-top: 10px;
-                opacity: 0;
-                transition: opacity 0.3s ease-in-out;
-
-            }
-        }
-
-        &:hover {
-            animation-name: animateCategory;
-            animation-duration: 0.3s;
-            animation-fill-mode: forwards;
-
-            p::after {
-                opacity: 1;
-                transition: opacity 0.3s ease-in-out;
-            }
-
-            fa-icon {
-                animation-name: animateCategory;
-                animation-duration: 0.3s;
-                animation-fill-mode: forwards;
-            }
-        }
     }
 }
 
-::ng-deep .pi-chevron-left:before,
-.pi-chevron-right:before {
-    color: #222222;
+.priceRange {
+    width: 100%;
+    background-color: red;
+}
+
+
+app-products-carousel {
+    display: none;
+}
+
+app-products-grid {
+    display: block;
 }
 
 @media only screen and (max-width: 768px) {
@@ -133,8 +102,14 @@ input {
     .search-mobile {
         display: block;
     }
+}
 
-    .category-carousel {
-        width: 95%;
+@media only screen and (max-width: 576px) {
+    app-products-carousel {
+        display: block;
+    }
+
+    app-products-grid {
+        display: none;
     }
 }

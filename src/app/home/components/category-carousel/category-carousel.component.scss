@@ -1,0 +1,110 @@
+.category-carousel {
+    margin-top: 20px;
+    width: 80%;
+
+    .cat-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        animation-name: animateCategoryOut;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+
+        cursor: pointer;
+
+        fa-icon {
+            animation-name: animateCategoryOut;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+        }
+
+        p {
+            position: relative;
+
+            &::after {
+                display: block;
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 100%;
+                background-color: #222222;
+                margin-top: 10px;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+
+            }
+        }
+
+        &:hover {
+            animation-name: animateCategory;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+
+            p::after {
+                opacity: 1;
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            fa-icon {
+                animation-name: animateCategory;
+                animation-duration: 0.3s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
+
+
+
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+
+
+
+    button {
+        width: 100px;
+        height: 40px;
+        border: 1px solid #777777;
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0);
+
+        color: #222222;
+
+        -webkit-appearance: none;
+        -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        animation-name: animateShadowOut;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+
+        &:hover {
+            animation-name: animateShadow;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+
+            background-color: white;
+        }
+    }
+}
+
+
+::ng-deep .pi-chevron-left:before,
+::ng-deep .pi-chevron-right:before {
+    color: #222222;
+}
+
+@media only screen and (max-width: 768px) {
+    .category-carousel {
+        width: 95%;
+    }
+
+    .filter {
+        display: none;
+    }
+}

@@ -8,25 +8,36 @@
                         <fa-icon [icon]="faSearch"></fa-icon>
                     </div>
                 </div>
-                <div class="col-2 filters">
-                    <div class="round d-flex justify-content-center align-items-center">
+                <div class="col-2 filter">
+                    <p-dialog [(visible)]="display" [style]="{width: '90vw'}" [modal]="true" [draggable]="false"
+                        [resizable]="false">
+                        <h2>Filters</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="horizontal">From</label>
+
+                            </div>
+                            <div class="col-6">
+                                <label for="horizontal">To</label>
+
+                            </div>
+                        </div>
+                        <div class="filters-content">
+
+                        </div>
+                        <div class="confirm"></div>
+                    </p-dialog>
+
+                    <button type="button" class='round d-flex justify-content-center align-items-center'
+                        (click)="showDialog()">
                         <fa-icon [icon]="faSliders"></fa-icon>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="d-flex justify-content-center">
-        <div class="category-carousel">
-            <p-carousel [value]="categories" styleClass="custom-carousel" [numVisible]="6" [numScroll]="1"
-                [circular]="true" [autoplayInterval]="0" [responsiveOptions]="responsiveOptions">
-                <ng-template let-cat pTemplate="item">
-                    <div class="cat-item">
-                        <fa-icon [icon]="cat.icon"></fa-icon>
-                        <p>{{cat.title}}</p>
-                    </div>
-                </ng-template>
-            </p-carousel>
-        </div>
-    </div>
+    <app-category-carousel></app-category-carousel>
+    <app-products-grid></app-products-grid>
+    <app-products-carousel></app-products-carousel>
 </main>

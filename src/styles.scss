@@ -82,3 +82,89 @@ a {
         color: rgba(99, 99, 99, 1)
     }
 }
+
+//PrimeNG css adjustments
+.p-component-overlay-enter {
+    animation: p-component-overlay-enter-animation 150ms forwards;
+}
+
+.p-sidebar {
+    background-color: white;
+    padding: 15px;
+
+    .p-sidebar-close-icon {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #FF385C;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            color: white;
+        }
+    }
+
+}
+
+.p-sidebar-active {
+    z-index: 100 !important;
+}
+
+.p-avatar {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.p-component-overlay {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    z-index: 99 !important;
+    transition-duration: 0.2s;
+}
+
+.p-dialog {
+    background-color: white !important;
+    padding: 15px;
+    border-radius: 15px;
+
+    .p-dialog-header-icons {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #FF385C;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            &::before {
+                color: white;
+            }
+        }
+    }
+}
+
+.p-component-overlay-leave {
+    animation: p-component-overlay-leave-animation 150ms forwards;
+}
+
+@keyframes p-component-overlay-enter-animation {
+    from {
+        background-color: transparent;
+    }
+
+    to {
+        background-color: var(--maskbg);
+    }
+}
+
+@keyframes p-component-overlay-leave-animation {
+    from {
+        background-color: var(--maskbg);
+    }
+
+    to {
+        background-color: transparent;
+    }
+}

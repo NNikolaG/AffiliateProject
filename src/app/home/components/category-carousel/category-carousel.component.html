@@ -1,0 +1,26 @@
+<div class="container d-flex justify-content-around">
+    <div class="category-carousel">
+        <p-carousel [value]="categories" styleClass="custom-carousel" [numVisible]="6" [numScroll]="1" [circular]="true"
+            [responsiveOptions]="responsiveOptions">
+            <ng-template let-cat pTemplate="item">
+                <div class="cat-item">
+                    <fa-icon [icon]="cat.icon"></fa-icon>
+                    <p>{{cat.title}}</p>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
+    <div class="filter">
+        <p-dialog [(visible)]="display" [style]="{width: '50vw'}" [modal]="true" [draggable]="false"
+            [resizable]="false">
+            <h2>Filters</h2>
+            <div class="filters-content"></div>
+            <div class="confirm"></div>
+        </p-dialog>
+
+        <button type="button" (click)="showDialog()">
+            <fa-icon [icon]="faSliders"></fa-icon>
+            Filters
+        </button>
+    </div>
+</div>

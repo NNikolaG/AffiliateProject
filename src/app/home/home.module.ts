@@ -1,25 +1,29 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AccordionModule } from 'primeng/accordion';     //accordion and accordion tab
 import { CarouselModule } from 'primeng/carousel';
+import { DialogModule } from 'primeng/dialog';
 
 import { HomeComponent } from './components/home/home.component';
-
+import { CategoryCarouselComponent } from './components/category-carousel/category-carousel.component';
+import { ProductsGridComponent } from './components/products-grid/products-grid.component';
+import { ProductsCarouselComponent } from './components/products-carousel/products-carousel.component';
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    CategoryCarouselComponent,
+    ProductsGridComponent,
+    ProductsCarouselComponent,
   ],
   imports: [
     CommonModule,
+    DialogModule,
+    CarouselModule,
     FontAwesomeModule,
-    NgbModule,
-    AccordionModule,
-    CarouselModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

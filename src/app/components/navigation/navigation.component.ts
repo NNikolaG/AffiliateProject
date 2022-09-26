@@ -12,6 +12,8 @@ export class NavigationComponent implements OnInit {
   public faSearch = faSearch;
   public faMenu = faBars;
   public faUser = faUser
+  display!: any;
+
   constructor() {
   }
 
