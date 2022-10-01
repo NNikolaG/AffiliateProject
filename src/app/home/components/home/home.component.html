@@ -38,6 +38,6 @@
         </div>
     </div>
     <app-category-carousel></app-category-carousel>
-    <app-products-grid></app-products-grid>
+    <app-products-grid *ngFor="let i in 25" class="col-12 d-flex justify-content-between"></app-products-grid>
     <app-products-carousel></app-products-carousel>
 </main>
