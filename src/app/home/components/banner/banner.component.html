@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row d-flex justify-content-between">
+        <div class="banner-carousel col-md-7 col-12 d-flex justify-content-center align-items-center">
+            <p-carousel [value]="banners" [numVisible]="1" [numScroll]="1" [autoplayInterval]="autoplayInterval"
+                [circular]="true" orientation="vertical">
+                <ng-template let-item pTemplate="item">
+                    <div class="banner">
+                        <div class="banner-image"
+                            style="background-image: url(../../../../assets/images/{{item.image}});">
+                        </div>
+                        <div class="banner-info col-6">
+                            <span class="bolded">{{item.titlePart1}} </span><span
+                                class="classic">{{item.titlePart2}}</span>
+                            <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                            <button class="banner-button">Check it out
+                                <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop" delay="1000"
+                                    colors="primary:#121331,secondary:#ff385c" style="width:32px;height:32px">
+                                </lord-icon>
+                            </button>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
+        <div class="col-md-5 col-12 right-banner">
+            <div class="col-12 first">DRUGI</div>
+            <div class="col-12 second">TRECI</div>
+        </div>
+    </div>
+</div>

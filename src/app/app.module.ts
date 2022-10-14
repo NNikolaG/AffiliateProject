@@ -25,12 +25,14 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { CategoriesComponent } from './categories/components/categories/categories.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
+    CategoriesComponent,
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CategoryCarouselComponent } from './components/category-carousel/category-carousel.component';
 import { ProductsGridComponent } from './components/products-grid/products-grid.component';
 import { ProductsCarouselComponent } from './components/products-carousel/products-carousel.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ProductsCarouselComponent } from './components/products-carousel/produc
     CategoryCarouselComponent,
     ProductsGridComponent,
     ProductsCarouselComponent,
+    BannerComponent,
   ],
   imports: [
     CommonModule,

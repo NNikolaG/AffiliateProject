@@ -145,8 +145,73 @@ a {
     }
 }
 
+#pr_id_3 {
+    height: 100% !important;
+
+    .p-carousel-content,
+    .p-carousel-container,
+    .p-carousel-items-content {
+        height: inherit !important;
+    }
+}
+
 .p-component-overlay-leave {
     animation: p-component-overlay-leave-animation 150ms forwards;
+}
+
+.animacija {
+    .banner-info {
+        .bolded {
+            animation-name: animateHeading;
+            animation-duration: 0.7s;
+            animation-fill-mode: forwards;
+        }
+
+        .classic {
+            animation-name: animateHeading;
+            animation-delay: 0.3s;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .desc {
+            animation-name: animateDesc;
+            animation-delay: 0.3s;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .banner-button {
+            animation-name: animateHeading;
+            animation-delay: 0.7s;
+            animation-duration: 0.7s;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@keyframes animateHeading {
+    from {
+        transform: translateY(150px);
+        opacity: 0;
+
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
+}
+
+@keyframes animateDesc {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes p-component-overlay-enter-animation {
