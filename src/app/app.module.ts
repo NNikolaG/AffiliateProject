@@ -20,6 +20,8 @@ import { ButtonModule } from "primeng/button";
 import { SidebarModule } from 'primeng/sidebar';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
+import { DialogModule } from 'primeng/dialog';
+
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -44,7 +46,8 @@ import { CategoriesComponent } from './categories/components/categories/categori
     HomeModule,
     SidebarModule,
     AvatarModule,
-    AvatarGroupModule
+    AvatarGroupModule,
+    DialogModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

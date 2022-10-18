@@ -1,4 +1,4 @@
-import { faSearch, faBars, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faBars, faUser, faSliders } from '@fortawesome/free-solid-svg-icons';
 import { Component, OnInit } from '@angular/core';
 
 
@@ -12,6 +12,9 @@ export class NavigationComponent implements OnInit {
   public faSearch = faSearch;
   public faMenu = faBars;
   public faUser = faUser
+  public faSliders = faSliders
+
+
   display!: any;
 
   constructor() {
@@ -19,5 +22,7 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  showDialog() {
+    this.display = true;
+  }
 }

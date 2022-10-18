@@ -1,5 +1,5 @@
 main {
-    margin-top: 90px;
+    margin-top: 65px;
     height: auto;
     width: 100%;
 }
@@ -7,80 +7,6 @@ main {
 .search-mobile {
     display: none;
 }
-
-input {
-    height: 40px;
-    width: 90%;
-    min-width: 150px;
-    border: none;
-    border-radius: 25px;
-    padding: 20px;
-    -webkit-appearance: none;
-    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-    animation-name: animateShadowOut;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-
-    &:hover {
-        animation-name: animateShadow;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards;
-    }
-
-    &:focus {
-        outline: none;
-    }
-}
-
-.search-icon {
-    margin-top: 5px;
-    position: relative;
-    left: -40px;
-
-    fa-icon {
-        color: white;
-    }
-}
-
-.round {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #a2b6bb;
-    color: white;
-    border: none;
-
-}
-
-.btn-none {
-    border: none;
-    background-color: white;
-
-    &:hover {
-        border: none;
-        background-color: white;
-    }
-}
-
-.filter {
-    margin-top: 5px;
-    position: relative;
-    left: -20px;
-
-    fa-icon {
-        color: white;
-    }
-
-    .filters-content {
-        width: 100%;
-        height: auto;
-
-    }
-}
-
-
 
 app-products-carousel {
     display: none;
@@ -92,7 +18,7 @@ app-products-grid {
 
 @media only screen and (max-width: 768px) {
     main {
-        margin-top: 65px;
+        margin-top: 110px;
     }
 
     .search-mobile {
@@ -101,9 +27,6 @@ app-products-grid {
 }
 
 @media only screen and (max-width: 576px) {
-    app-products-carousel {
-        display: block;
-    }
 
     app-products-grid {
         display: none;

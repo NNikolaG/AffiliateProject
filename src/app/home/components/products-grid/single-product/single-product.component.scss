@@ -1,17 +1,77 @@
-.top-deal {
-    height: 100px;
-    border: 2px solid black;
+.product {
+    width: 100%;
 
-    img {
-        width: 100%;
+    -webkit-appearance: none;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    height: 300px;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        padding: 10px;
+
+        img {
+            width: 80%;
+        }
     }
 
-    h2 {
-        font-weight: bolder;
-    }
-}
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-.card {
-    height: 100px;
-    border: 2px solid red;
+        text-align: center;
+
+        padding: 5px 20px;
+        height: 100px;
+
+        h3 {
+            font-size: 0.9rem;
+            font-weight: bolder;
+        }
+    }
+
+    position: relative;
+    z-index: 22;
+
+    .bot-but {
+        height: 30px;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        width: 70%;
+        background-color: white;
+        transform: translateX(-50%);
+        border-radius: 25px;
+
+        button {
+            height: 30px;
+            position: absolute;
+            left: 50%;
+            width: 100%;
+            color: #242524;
+            // background-color: #a2b6bb;
+            transform: translateX(-50%);
+            z-index: 44 !important;
+            animation-name: animateShadowOut;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+
+            &:hover {
+                animation-name: animateShadow;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+
 }

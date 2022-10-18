@@ -13,11 +13,14 @@ export class ProductsGridComponent implements OnInit {
   ngOnInit(): void {
 
     this.products = [
-      { title: 'Keyboards' },
-      { title: 'Mouses' },
-      { title: 'Desktop' },
-      { title: 'Headsets' },
-      { title: 'Printers' },
+      { title: 'SteelSeries Apex 3 RGB Gaming Keyboard', image: "product1.png", category: "Keyboards", desc: "AWESOME PRODUCT" },
+      { title: 'SteelSeries Apex 3 RGB Gaming Keyboard', image: "product1.png", category: "Keyboards", desc: "AWESOME PRODUCT" },
+      { title: 'SteelSeries Apex 3 RGB Gaming Keyboard', image: "product1.png", category: "Keyboards", desc: "AWESOME PRODUCT" },
+      { title: 'Fiodio Rainbow Membrane Gaming Keyboard', image: "product2.png", category: "Keyboards", desc: "AWESOME PRODUCT" },
+      { title: 'Fiodio Rainbow Membrane Gaming Keyboard', image: "product2.png", category: "Keyboards", desc: "AWESOME PRODUCT" },
+      { title: 'Wireless Mouse, E-YOOSO Computer Mouse', image: "product3.png", category: "Mouses", desc: "AWESOME PRODUCT" },
+      { title: 'Wireless Mouse, E-YOOSO Computer Mouse', image: "product3.png", category: "Mouses", desc: "AWESOME PRODUCT" },
+      { title: 'Wireless Mouse, E-YOOSO Computer Mouse', image: "product3.png", category: "Mouses", desc: "AWESOME PRODUCT" },
     ];
   }
 

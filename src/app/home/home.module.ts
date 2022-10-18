@@ -13,6 +13,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { ProductsGridComponent } from './components/products-grid/products-grid.component';
 import { SingleProductComponent } from './components/products-grid/single-product/single-product.component';
 import { TopDealProductsComponent } from './components/top-deal-products/top-deal-products.component';
+import { SocialMediaComponent } from './components/social-media/social-media.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { TopDealProductsComponent } from './components/top-deal-products/top-dea
     ProductsGridComponent,
     SingleProductComponent,
     TopDealProductsComponent,
+    SocialMediaComponent,
   ],
   imports: [
     CommonModule,

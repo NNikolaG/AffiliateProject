@@ -77,3 +77,34 @@
         </ul>
     </div>
 </p-sidebar>
+
+<div class="background">
+    <div class="container">
+        <div class="search-mobile">
+            <div class="row">
+                <div class="col-10 search d-flex justify-content-around">
+                    <input type="text" placeholder="Search for products">
+                    <div class="search-icon round d-flex justify-content-center align-items-center">
+                        <fa-icon [icon]="faSearch"></fa-icon>
+                    </div>
+                </div>
+                <div class="col-2 filter">
+                    <p-dialog [(visible)]="display" [style]="{width: '90vw'}" [modal]="true" [draggable]="false"
+                        [resizable]="false">
+                        <h2>Filters</h2>
+                        <hr>
+                        <div class="filters-content">
+                            HELLO
+                        </div>
+                        <div class="confirm"></div>
+                    </p-dialog>
+
+                    <button type="button" class='round d-flex justify-content-center align-items-center'
+                        (click)="showDialog()">
+                        <fa-icon [icon]="faSliders"></fa-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
