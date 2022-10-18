@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsGridComponent implements OnInit {
 
+  public products!: any;
   constructor() { }
 
   ngOnInit(): void {
+
+    this.products = [
+      { title: 'Keyboards' },
+      { title: 'Mouses' },
+      { title: 'Desktop' },
+      { title: 'Headsets' },
+      { title: 'Printers' },
+    ];
   }
 
 }

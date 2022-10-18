@@ -3,8 +3,13 @@
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 
+$base-color: #a2b6bb;
+$secondary: #242524;
+$terc: #fdfbf7;
+
+
 fa-icon {
-    color: #222222;
+    color: $secondary;
 }
 
 ul {
@@ -17,6 +22,29 @@ a {
     &:hover {
         color: black;
     }
+}
+
+body {
+    font-family: Agrandir;
+}
+
+.basic-btn {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    -webkit-appearance: none;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: rgba(0, 0, 0, 0);
+
 }
 
 .ss {
@@ -49,13 +77,13 @@ a {
     }
 
     to {
-        color: black;
+        color: $secondary;
     }
 }
 
 @keyframes animateCategoryOut {
     from {
-        color: black;
+        color: $secondary;
     }
 
     to {
@@ -69,13 +97,13 @@ a {
     }
 
     to {
-        color: black;
+        color: $secondary;
     }
 }
 
 @keyframes animateLineOut {
     from {
-        color: black;
+        color: $secondary;
     }
 
     to {
@@ -89,20 +117,20 @@ a {
 }
 
 .p-sidebar {
-    background-color: white;
+    background-color: $terc;
     padding: 15px;
 
     .p-sidebar-close-icon {
         width: 25px;
         height: 25px;
         border-radius: 50%;
-        background-color: #FF385C;
+        background-color: $base-color;
         display: flex;
         justify-content: center;
         align-items: center;
 
         &::before {
-            color: white;
+            color: $terc;
         }
     }
 
@@ -124,7 +152,7 @@ a {
 }
 
 .p-dialog {
-    background-color: white !important;
+    background-color: $terc !important;
     padding: 15px;
     border-radius: 15px;
 
@@ -132,14 +160,14 @@ a {
         width: 25px;
         height: 25px;
         border-radius: 50%;
-        background-color: #FF385C;
+        background-color: $base-color;
         display: flex;
         justify-content: center;
         align-items: center;
 
         span {
             &::before {
-                color: white;
+                color: $terc;
             }
         }
     }

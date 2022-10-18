@@ -1,6 +1,6 @@
 .category-carousel {
     margin-top: 20px;
-    width: 80%;
+    width: 85%;
 
     .cat-item {
         display: flex;
@@ -29,7 +29,7 @@
                 content: "";
                 height: 2px;
                 width: 100%;
-                background-color: #222222;
+                background-color: #242524;
                 margin-top: 10px;
                 opacity: 0;
                 transition: opacity 0.3s ease-in-out;
@@ -60,11 +60,9 @@
 
 .filter {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    width: 20%;
-
-
+    width: 15%;
 
     button {
         width: 100px;
@@ -73,7 +71,7 @@
         border-radius: 25px;
         background-color: rgba(0, 0, 0, 0);
 
-        color: #222222;
+        color: #242524;
 
         -webkit-appearance: none;
         -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -96,7 +94,7 @@
 
 ::ng-deep .pi-chevron-left:before,
 ::ng-deep .pi-chevron-right:before {
-    color: #222222;
+    color: #242524;
 }
 
 @media only screen and (max-width: 768px) {

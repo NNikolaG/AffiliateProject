@@ -1,8 +1,10 @@
-<div class="card">
-    <div class="image">
-        <img src="" alt="">
-    </div>
-    <div class="title">
-
+<div class="background">
+    <div class="container">
+        <h1>
+            Today's best deals
+        </h1>
+        <div class="row d-flex">
+            <app-single-product *ngFor="let product of products; let indexer = index" [indexer]="indexer" [product]="product"></app-single-product>
+        </div>
     </div>
 </div>

@@ -8,18 +8,21 @@ import { DialogModule } from 'primeng/dialog';
 
 import { HomeComponent } from './components/home/home.component';
 import { CategoryCarouselComponent } from './components/category-carousel/category-carousel.component';
-import { ProductsGridComponent } from './components/products-grid/products-grid.component';
 import { ProductsCarouselComponent } from './components/products-carousel/products-carousel.component';
 import { BannerComponent } from './components/banner/banner.component';
-
+import { ProductsGridComponent } from './components/products-grid/products-grid.component';
+import { SingleProductComponent } from './components/products-grid/single-product/single-product.component';
+import { TopDealProductsComponent } from './components/top-deal-products/top-deal-products.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     CategoryCarouselComponent,
-    ProductsGridComponent,
     ProductsCarouselComponent,
     BannerComponent,
+    ProductsGridComponent,
+    SingleProductComponent,
+    TopDealProductsComponent,
   ],
   imports: [
     CommonModule,

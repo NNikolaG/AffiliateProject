@@ -1,12 +1,19 @@
 .navigation-top {
-    border-bottom: 1px solid #c1c1c1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     height: 75px;
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px);
     z-index: 98;
+}
+
+.logo {
+    img {
+        max-width: 125px;
+    }
 }
 
 .navigation-bot {
@@ -61,7 +68,7 @@ input {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #FF385C;
+    background-color: #a2b6bb;
     color: white;
 }
 
@@ -117,8 +124,8 @@ lord-icon {
 }
 
 
-.nav-list{
-    ul{
+.nav-list {
+    ul {
         padding-top: 40px;
     }
 }
@@ -141,6 +148,10 @@ lord-icon {
             .logo {
                 display: flex;
                 justify-content: center;
+
+                img {
+                    max-width: 80px;
+                }
             }
         }
     }

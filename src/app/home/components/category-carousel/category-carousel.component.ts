@@ -40,10 +40,6 @@ export class CategoryCarouselComponent implements OnInit {
       { icon: faPrint, title: 'Printers' },
       { icon: faPrint, title: 'Printers' },
       { icon: faPrint, title: 'Printers' },
-      { icon: faPrint, title: 'Printers' },
-      { icon: faPrint, title: 'Printers' },
-      { icon: faPrint, title: 'Printers' },
-      { icon: faPrint, title: 'Printers' },
     ];
   }
 

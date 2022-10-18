@@ -13,18 +13,8 @@
                         [resizable]="false">
                         <h2>Filters</h2>
                         <hr>
-                        <div class="row">
-                            <div class="col-6">
-                                <label for="horizontal">From</label>
-
-                            </div>
-                            <div class="col-6">
-                                <label for="horizontal">To</label>
-
-                            </div>
-                        </div>
                         <div class="filters-content">
-
+                            HELLO
                         </div>
                         <div class="confirm"></div>
                     </p-dialog>
@@ -38,7 +28,8 @@
         </div>
     </div>
     <app-banner></app-banner>
+    <app-top-deal-products class="col-12"></app-top-deal-products>
+    <!-- <app-products-grid class="col-12 d-flex justify-content-between"></app-products-grid> -->
     <app-category-carousel></app-category-carousel>
-    <app-products-grid *ngFor="let i in 25" class="col-12 d-flex justify-content-between"></app-products-grid>
-    <app-products-carousel></app-products-carousel>
+    <!-- <app-products-carousel></app-products-carousel> -->
 </main>
