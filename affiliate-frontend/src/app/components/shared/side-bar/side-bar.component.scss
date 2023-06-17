@@ -1,0 +1,19 @@
+$side-width: 200px;
+
+.sidebar-wrapper {
+    width: $side-width;
+    height: 100%;
+    position: fixed;
+    z-index: 9;
+    top: 0px;
+    left: 0px;
+    background-color: green;
+    transition: .5s;
+}
+
+.hide {
+    transform: translateX(-$side-width);
+}
+.show {
+    transform: translateX(0px);
+}

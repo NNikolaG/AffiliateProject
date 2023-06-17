@@ -1,1 +1,18 @@
-/*# sourceMappingURL=side-bar.component.css.map */
+.sidebar-wrapper {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  z-index: 9;
+  top: 0px;
+  left: 0px;
+  background-color: green;
+  transition: 0.5s;
+}
+
+.hide {
+  transform: translateX(-200px);
+}
+
+.show {
+  transform: translateX(0px);
+}/*# sourceMappingURL=side-bar.component.css.map */
