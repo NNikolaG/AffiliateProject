@@ -1,0 +1,24 @@
+.nav-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: red;
+    height: 70px;
+    width: 100%;
+
+    .menu {
+        width: 30%;
+        height: 70px;
+        background-color: blue;
+    }
+    .logo {
+        width: 30%;
+        height: 70px;
+        background-color: blue;
+    }
+    .user {
+        width: 30%;
+        height: 70px;
+        background-color: blue;
+    }
+}

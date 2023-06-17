@@ -1,0 +1,23 @@
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: red;
+  height: 70px;
+  width: 100%;
+}
+.nav-wrapper .menu {
+  width: 30%;
+  height: 70px;
+  background-color: blue;
+}
+.nav-wrapper .logo {
+  width: 30%;
+  height: 70px;
+  background-color: blue;
+}
+.nav-wrapper .user {
+  width: 30%;
+  height: 70px;
+  background-color: blue;
+}/*# sourceMappingURL=top-nav.component.css.map */
